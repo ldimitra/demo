@@ -38,7 +38,7 @@ jobs:
     - name: Build DockerFile
       run: |
         echo ${{ secrets.DOCKER_TOKEN }} | docker login -u ldimitra --password-stdin
-        docker build -t test_accenture .
+        docker build -t ldimitra/test_accenture .
         docker push ldimitra/test_accenture
       
 
